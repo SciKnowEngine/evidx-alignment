@@ -1,4 +1,6 @@
-# effect-alignment
+# evidx-alignment
+
+(Following the EFFECT alignment repository)
 
 This repository will contain the Karma models, frames, etc that can be made public.
 No sample data should be added to this repo. It should be added to the effect-data repository.
