@@ -1,0 +1,198 @@
+@prefix : <http://bioc.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bioc: <http://purl.org/bioc/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/bioc/> .
+
+<http://purl.org/bioc/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://bioc.org/annotations
+bioc:annotations rdf:type owl:ObjectProperty ;
+			rdfs:domain [ rdf:type owl:Class ;
+               owl:unionOf ( bioc:Passage
+                 bioc:Sentence
+                     )
+             ] ;
+			rdfs:range bioc:Annotation;
+      rdfs:label "annotations"@en .
+
+###  http://bioc.org/documents
+bioc:documents rdf:type owl:ObjectProperty ;
+			rdfs:domain bioc:Collection ;
+      rdfs:range bioc:Document ;
+      rdfs:label "infons"@en .
+
+###  http://bioc.org/locations
+bioc:locations rdf:type owl:ObjectProperty ;
+			rdfs:domain bioc:Annotation;
+      rdfs:range bioc:Location ;
+      rdfs:label "locations"@en .
+
+###  http://bioc.org/nodes
+bioc:nodes rdf:type owl:ObjectProperty ;
+			rdfs:domain bioc:Relation;
+      rdfs:range bioc:Node;
+      rdfs:label "nodes"@en .
+
+###  http://bioc.org/passages
+bioc:passages rdf:type owl:ObjectProperty ;
+			rdfs:domain bioc:Document ;
+      rdfs:range bioc:Passage ;
+      rdfs:label "passages"@en .
+
+###  http://bioc.org/relations
+bioc:relations rdf:type owl:ObjectProperty ;
+			rdfs:domain [ rdf:type owl:Class ;
+               owl:unionOf ( bioc:Passage
+                 bioc:Document
+                 bioc:Sentence
+                     )
+             ] ;
+      rdfs:range bioc:Relation ;
+      rdfs:label "relations"@en .
+
+###  http://bioc.org/sentences
+bioc:sentences rdf:type owl:ObjectProperty ;
+      rdfs:domain bioc:Passage ;
+      rdfs:range bioc:Sentence ;
+      rdfs:label "sentences"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://bioc.org/date
+bioc:date rdf:type owl:DatatypeProperty ;
+    rdfs:domain bioc:Collection ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "date"@en .
+
+###  http://bioc.org/id
+bioc:id rdf:type owl:DatatypeProperty ;
+        rdfs:domain bioc:Document ;
+        rdfs:range xsd:string ;
+        rdfs:label "id"@en .
+
+###  http://bioc.org/key
+bioc:key rdf:type owl:DatatypeProperty ;
+	rdfs:domain [ rdf:type owl:Class ;
+               owl:unionOf ( bioc:Collection
+                 		     bioc:Infon
+                           )] ;        
+    rdfs:range xsd:anyURI ;
+    rdfs:label "key"@en .
+
+###  http://bioc.org/length
+bioc:length rdf:type owl:DatatypeProperty ;
+      rdfs:domain bioc:Location ;
+      rdfs:range xsd:integer ;
+      rdfs:label "length"@en .
+
+###  http://bioc.org/offset
+bioc:offset rdf:type owl:DatatypeProperty ;
+      rdfs:domain bioc:Sentence ;
+      rdfs:range xsd:integer ;
+      rdfs:label "offset"@en .
+
+###  http://bioc.org/refid
+bioc:refid rdf:type owl:DatatypeProperty ;
+     rdfs:domain bioc:Node ;
+     rdfs:range xsd:string ;
+     rdfs:label "refid"@en .
+
+###  http://bioc.org/role
+bioc:role rdf:type owl:DatatypeProperty ;
+    rdfs:domain bioc:Node ;
+    rdfs:range xsd:anyURI;
+    rdfs:label "role"@en .
+
+###  http://bioc.org/source
+bioc:source rdf:type owl:DatatypeProperty ;
+      rdfs:domain bioc:Collection ;
+      rdfs:range xsd:anyURI  ;
+      rdfs:label "source"@en .
+
+###  http://bioc.org/text
+bioc:text rdf:type owl:DatatypeProperty ;
+	rdfs:domain [ rdf:type owl:Class ;
+               owl:unionOf ( bioc:Annotation
+                 bioc:Sentence
+                 bioc:Passage
+                     )
+             ] ;        
+
+	rdfs:range xsd:string ;
+    rdfs:label "text"@en .
+
+###  http://bioc.org/value
+bioc:value rdf:type owl:DatatypeProperty ;
+    rdfs:domain bioc:Infon ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "value"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://bioc.org/Annotation
+bioc:Annotation rdf:type owl:Class ;
+        rdfs:label "BioCAnnotation"@en .
+
+
+###  http://bioc.org/Collection
+bioc:Collection rdf:type owl:Class ;
+    rdfs:comment "Collection of documents. Collection of documents for a project. They may be an entire corpus or some portion of a corpus. Fields are provided to describe the collection. Documents may appear empty if doing document at a time IO." ;
+    rdfs:isDefinedBy bioc: ;
+	rdfs:label "BioCCollection"@en .
+
+
+###  http://bioc.org/Document
+bioc:Document rdf:type owl:Class ;
+    rdfs:comment "Each bioc:Document in the bioc:Collection. An id, typically from the original corpus, identifies the particular document. It includes bioc:Passages in the document and possibly bioc:Relations over annotations on the document." ;
+    rdfs:label "BioCDocument"@en .
+
+
+###  http://bioc.org/Location
+bioc:Location rdf:type owl:Class ;
+	rdfs:comment "The connection to the original text can be made through the :offset, :length, and possibly the :text data properties." ;
+	rdfs:label "BioCLocation"@en .
+
+###  http://bioc.org/Node
+bioc:Node rdf:type owl:Class ;
+	rdfs:label "BioCNode"@en .
+
+
+###  http://bioc.org/Passage
+bioc:Passage rdf:type owl:Class ;
+	rdfs:comment "One passage in a bioc:Document. This might be the bioc:text in the passage and possibly bioc:Annotations over that text. It could be the bioc:Sentences in the passage. In either case it might include bioc:Relations over annotations on the passage." ;
+	rdfs:label "BioCPassage"@en .
+
+
+###  http://bioc.org/Relation
+bioc:Relation rdf:type owl:Class ;
+	rdfs:comment "Relationship between multiple bioc:Annotations and possibly other bioc:Relations.";
+    rdfs:label "BioCRelation"@en .
+
+
+###  http://bioc.org/Sentence
+bioc:Sentence rdf:type owl:Class ;
+      rdfs:label "BioCSentence"@en .
+
+###  http://bioc.org/Infon
+bioc:Infon rdf:type owl:Class ;
+	rdfs:comment "A bioc:Infon elements is a simply a URI-based key/value pair linking the annotation to any semantic web annotation. This is deliberately open-ended URI to provide maximum expressibilty. This is equivalent to the original use of the 'infons' field across multiple classes within the BioC standard.";
+      rdfs:label "BioCInfon"@en .
+

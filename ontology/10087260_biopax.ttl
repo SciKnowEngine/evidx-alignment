@@ -1,0 +1,387 @@
+@prefix :      <http://purl.org/ske/semsci17/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bp:    <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+
+:ExperimentalFormVocabulary_neutral_component
+        a        bp:ExperimentalFormVocabulary ;
+        bp:term  "neutral component" ;
+        bp:xref  :UnificationXref_psi-mi_MI_0497 .
+
+:RelationshipXref_interpro_IPR006785
+        a       bp:RelationshipXref ;
+        bp:db   "interpro" ;
+        bp:id   "IPR006785" .
+
+:Protein_uniprotkb_P80667_identity_1494456508174
+        a                   bp:Protein ;
+        bp:comment          "psi-mi participant" ;
+        bp:dataSource       :Provenance_MINT ;
+        bp:displayName      "pex13_yeast" ;
+        bp:entityReference  :ProteinReference_uniprotkb_P80667_identity ;
+        bp:evidence         :Evidence_1494456508175_p951833 ;
+        bp:name             "Peroxisomal membrane protein PAS20" .
+
+:UnificationXref_1494456508173
+        a       bp:UnificationXref ;
+        bp:db   "PSI-MI" ;
+        bp:id   "MI:0358" .
+
+:RelationshipXref_rcsb_pdb_2V1R
+        a       bp:RelationshipXref ;
+        bp:db   "rcsb pdb" ;
+        bp:id   "2V1R" .
+
+:RelationshipXref_interpro_IPR007223
+        a       bp:RelationshipXref ;
+        bp:db   "interpro" ;
+        bp:id   "IPR007223" .
+
+:SequenceModificationVocabulary_binding_region
+        a        bp:SequenceModificationVocabulary ;
+        bp:term  "binding region" ;
+        bp:xref  :UnificationXref_psi-mi_MI_0117 .
+
+:RelationshipXref_uniprotkb_P80667_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "uniprotkb" ;
+        bp:id                "P80667" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+:RelationshipXref_go_GO_1990429
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:1990429" .
+
+:EvidenceCodeVocabulary_predetermined
+        a        bp:EvidenceCodeVocabulary ;
+        bp:term  "predetermined" ;
+        bp:xref  :UnificationXref_psi-mi_MI_0396 .
+
+:RelationshipXref_go_GO_0016560
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:0016560" .
+
+:UnificationXref_1494456508172
+        a       bp:UnificationXref ;
+        bp:db   "PSI-MI" ;
+        bp:id   "MI:0360" .
+
+:PublicationXref_pubmed_10087260
+        a       bp:PublicationXref ;
+        bp:db   "pubmed" ;
+        bp:id   "10087260" .
+
+:UnificationXref_mint_MINT-7721152
+        a       bp:UnificationXref ;
+        bp:db   "mint" ;
+        bp:id   "MINT-7721152" .
+
+:RelationshipXref_refseq_NP_011362_3
+        a       bp:RelationshipXref ;
+        bp:db   "refseq" ;
+        bp:id   "NP_011362.3" .
+
+:RelationshipXref_rcsb_pdb_1N5Z
+        a       bp:RelationshipXref ;
+        bp:db   "rcsb pdb" ;
+        bp:id   "1N5Z" .
+
+:RelationshipXref_intact_EBI-13206_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "intact" ;
+        bp:id                "EBI-13206" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+:ExperimentalForm_1494456508181
+        a                               bp:ExperimentalForm ;
+        bp:comment                      "[ModificationFeature: [binding region]]" , "[ExperimentalFormVocabulary_neutral component]" ;
+        bp:experimentalFeature          :ModificationFeature_1494456508180 ;
+        bp:experimentalFormDescription  :ExperimentalFormVocabulary_neutral_component .
+
+:UnificationXref_psi-mi_MI_0018
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0018" .
+
+cito:describes  a  owl:ObjectProperty .
+
+:10087260_biopax.xml  a  owl:Ontology .
+#        owl:imports  bp: .
+
+:RelationshipXref_intact_EBI-6962910_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "intact" ;
+        bp:id                "EBI-6962910" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+:RelationshipXref_rcsb_pdb_1JQQ
+        a       bp:RelationshipXref ;
+        bp:db   "rcsb pdb" ;
+        bp:id   "1JQQ" .
+
+:InteractionVocabulary_physical_association
+        a        bp:InteractionVocabulary ;
+        bp:term  "physical association" ;
+        bp:xref  :UnificationXref_psi-mi_MI_0915 .
+
+:Provenance_MINT  a     bp:Provenance ;
+        bp:comment      "Attribute{value='http://mint.bio.uniroma2.it/mint', name='url', nameAc='null'}" , "Attribute{value='http://mint.bio.uniroma2.it/mint', name='url', nameAc='MI:0614'}" ;
+        bp:displayName  "MINT" ;
+        bp:xref         :UnificationXref_psi-mi_MI_0471 .
+
+:UnificationXref_uniprotkb_P80667
+        a       bp:UnificationXref ;
+        bp:db   "uniprotkb" ;
+        bp:id   "P80667" .
+
+:UnificationXref_uniprotkb_P53112
+        a       bp:UnificationXref ;
+        bp:db   "uniprotkb" ;
+        bp:id   "P53112" .
+
+:RelationshipXref_uniprotkb_D6VTZ8_secondary-ac
+        a                    bp:RelationshipXref ;
+        bp:db                "uniprotkb" ;
+        bp:id                "D6VTZ8" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0360> .
+
+:RelationshipXref_doi_10_1083_jcb_144_6_1151_secondary-ac
+        a                    bp:RelationshipXref ;
+        bp:db                "doi" ;
+        bp:id                "10.1083/jcb.144.6.1151" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0360> .
+
+:RelationshipXref_go_GO_1990415
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:1990415" .
+
+:ModificationFeature_1494456508176
+        a                       bp:ModificationFeature ;
+        bp:featureLocationType  :SequenceRegionVocabulary_binding_site ;
+        bp:modificationType     :SequenceModificationVocabulary_binding_region .
+
+:UnificationXref_1494456508171
+        a       bp:UnificationXref ;
+        bp:db   "PSI-MI" ;
+        bp:id   "MI:0356" .
+
+:SequenceRegionVocabulary_binding_site
+        a        bp:SequenceRegionVocabulary ;
+        bp:term  "binding site" ;
+        bp:xref  :UnificationXref_mint_MINT-7721156 .
+
+:UnificationXref_psi-mi_MI_0117
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0117" .
+
+:RelationshipXref_intact_EBI-13212_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "intact" ;
+        bp:id                "EBI-13212" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+:Evidence_1494456508170_i951832_e951829
+        a                bp:Evidence ;
+        cito:describes   <http://www.ncbi.nlm.nih.gov/pubmed/10087260#f8> ;
+        bp:comment       "Girzalsky W., Rehling P., Stein K., Kipper J., Blank L., Kunau WH., Erdmann R. author-list MI:0636" , "mimix curation mimix curation MI:0960" , "girzalsky-1999-1" , "Figure:f8" , "1999 publication year MI:0886" , "Host Organism{names=Names{shortLabel='yeast', fullName='Saccharomyces cerevisiae (strain ATCC 204508 / S288c)', aliases=null}, cellType=null, compartment=null, tissue=null, ncbiTaxId=559292}" , "Involvement of Pex13p in Pex14p localization and peroxisomal targeting signal 2-dependent protein import into peroxisomes." , "SH3_yeast comment MI:0612" , "J. Cell Biol. (0021-9525) journal MI:0885" ;
+        bp:evidenceCode  :EvidenceCodeVocabulary_predetermined , :EvidenceCodeVocabulary_2_hybrid ;
+        bp:xref          :UnificationXref_mint_MINT-7721150 , :RelationshipXref_mint_MINT-6742807_primary-reference , :PublicationXref_pubmed_10087260 , :RelationshipXref_doi_10_1083_jcb_144_6_1151_secondary-ac , :RelationshipXref_intact_EBI-6962899_identity .
+
+<http://identifiers.org/psimi/MI:0360>
+        a        bp:RelationshipTypeVocabulary ;
+        bp:term  "secondary-ac" ;
+        bp:xref  :UnificationXref_1494456508172 .
+
+:BioSource_taxonomy_559292
+        a                bp:BioSource ;
+        bp:standardName  "yeast" ;
+        bp:xref          :UnificationXref_taxonomy_559292 .
+
+:UnificationXref_psi-mi_MI_0915
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0915" .
+
+<http://identifiers.org/psimi/MI:0358>
+        a        bp:RelationshipTypeVocabulary ;
+        bp:term  "primary-reference" ;
+        bp:xref  :UnificationXref_1494456508173 .
+
+:ProteinReference_uniprotkb_P53112_identity
+        a               bp:ProteinReference ;
+        bp:displayName  "pex14_yeast" ;
+        bp:name         "YGL153W" , "PEX14" , "Peroxisomal membrane protein PEX14" , "G1870" , "Peroxin-14" ;
+        bp:organism     :BioSource_taxonomy_559292 ;
+        bp:sequence     "MSDVVSKDRKALFDSAVSFLKDESIKDAPLLKKIEFLKSKGLTEKEIEIAMKEPKKDGIVGDEVSKKIGSTENRASQDMYLYEAMPPTLPHRDWKDYFVMATATAGLLYGAYEVTRRYVIPNILPEAKSKLEGDKKEIDDQFSKIDTVLNAIEAEQAEFRKKESETLKELSDTIAELKQALVQTTRSREKIEDEFRIVKLEVVNMQNTIDKFVSDNDGMQELNNIQKEMESLKSLMNNRMESGNAQDNRLFSISPNGIPGIDTIPSASEILAKMGMQEESDKEKENGSDANKDDNAVPAWKKAREQTIDSNASIPEWQKNTAANEISVPDWQNGQVEDSIP" ;
+        bp:xref         :UnificationXref_uniprotkb_P53112 , :RelationshipXref_refseq_NP_011362_3 , :RelationshipXref_rcsb_pdb_2V1R , :RelationshipXref_uniprotkb_D6VTZ8_secondary-ac , :RelationshipXref_intact_EBI-13212_identity , :RelationshipXref_go_GO_0016560 , :RelationshipXref_go_GO_0005778 , :RelationshipXref_interpro_IPR025655 , :RelationshipXref_go_GO_1990415 , :RelationshipXref_go_GO_0030674 , :RelationshipXref_interpro_IPR006785 , :RelationshipXref_rcsb_pdb_1N5Z , :RelationshipXref_go_GO_1990429 , :RelationshipXref_sgd_S000003121 .
+
+:UnificationXref_mint_MINT-7721156
+        a       bp:UnificationXref ;
+        bp:db   "mint" ;
+        bp:id   "MINT-7721156" .
+
+:Complex_1494456508182
+        a               bp:Complex ;
+        bp:component    :Protein_uniprotkb_P80667_identity_1494456508174 , :Protein_uniprotkb_P53112_identity_1494456508178 ;
+        bp:dataSource   :Provenance_MINT ;
+        bp:displayName  "pex13-pex14-1" ;
+        bp:evidence     :Evidence_1494456508170_i951832_e951829 ;
+        bp:xref         :RelationshipXref_intact_EBI-6962910_identity , :UnificationXref_mint_MINT-7721152 .
+
+:EvidenceCodeVocabulary_2_hybrid
+        a        bp:EvidenceCodeVocabulary ;
+        bp:term  "2 hybrid" ;
+        bp:xref  :UnificationXref_psi-mi_MI_0018 .
+
+:Evidence_1494456508175_p951833
+        a                    bp:Evidence ;
+        bp:experimentalForm  :ExperimentalForm_1494456508177 .
+
+:Protein_uniprotkb_P53112_identity_1494456508178
+        a                   bp:Protein ;
+        bp:comment          "psi-mi participant" ;
+        bp:dataSource       :Provenance_MINT ;
+        bp:displayName      "pex14_yeast" ;
+        bp:entityReference  :ProteinReference_uniprotkb_P53112_identity ;
+        bp:evidence         :Evidence_1494456508179_p951835 ;
+        bp:name             "Peroxisomal membrane protein PEX14" .
+
+:RelationshipXref_uniprotkb_D6VYJ4_secondary-ac
+        a                    bp:RelationshipXref ;
+        bp:db                "uniprotkb" ;
+        bp:id                "D6VYJ4" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0360> .
+
+:RelationshipXref_go_GO_0005778
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:0005778" .
+
+:RelationshipXref_rcsb_pdb_1NM7
+        a       bp:RelationshipXref ;
+        bp:db   "rcsb pdb" ;
+        bp:id   "1NM7" .
+
+:RelationshipXref_interpro_IPR001452
+        a       bp:RelationshipXref ;
+        bp:db   "interpro" ;
+        bp:id   "IPR001452" .
+
+:RelationshipXref_go_GO_0030674
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:0030674" .
+
+:UnificationXref_mint_MINT-7721150
+        a       bp:UnificationXref ;
+        bp:db   "mint" ;
+        bp:id   "MINT-7721150" .
+
+:RelationshipXref_refseq_NP_013292_1
+        a       bp:RelationshipXref ;
+        bp:db   "refseq" ;
+        bp:id   "NP_013292.1" .
+
+:UnificationXref_taxonomy_559292
+        a       bp:UnificationXref ;
+        bp:db   "Taxonomy" ;
+        bp:id   "559292" .
+
+:ProteinReference_uniprotkb_P80667_identity
+        a               bp:ProteinReference ;
+        bp:displayName  "pex13_yeast" ;
+        bp:name         "L9470.1" , "PEX13" , "Peroxin-13" , "PAS20" , "Peroxisomal membrane protein PAS20" , "YLR191W" ;
+        bp:organism     :BioSource_taxonomy_559292 ;
+        bp:sequence     "MSSTAVPRPKPWETSASLEEPQRNAQSLSAMMTSNQQDSRPTEESNNSNSASESAPEVLPRPAALNSSGTYGESNTIPGIYGNSNYGIPYDNNPYSMNSIYGNSIGRYGYGGSYYGNNYGSFYGGGYGAGAGYGMNNGSGLGESTKATFQLIESLIGAVTGFAQMLESTYMATHNSFFTMISVAEQFGNLKEMLGSFFGIFAIMKFLKKILYRATKGRLGIPPKNFAESEGSKNKLIEDFQKFNDSGTINSNEKATRRKISWKPLLFFLMAVFGFPYLLNKFITKLQTSGTIRASQGNGSEPIDPSKLEFARALYDFVPENPEMEVALKKGDLMAILSKKDPLGRDSDWWKVRTKNGNIGYIPYNYIEIIKRRKKIEHVDDETRTH" ;
+        bp:xref         :RelationshipXref_rcsb_pdb_1NM7 , :RelationshipXref_rcsb_pdb_2V1R , :RelationshipXref_interpro_IPR001452 , :RelationshipXref_go_GO_0030674 , :RelationshipXref_sgd_S000004181 , :RelationshipXref_rcsb_pdb_1JQQ , :RelationshipXref_go_GO_0016560 , :RelationshipXref_go_GO_0016021 , :RelationshipXref_rcsb_pdb_1N5Z , :RelationshipXref_uniprotkb_D6VYJ4_secondary-ac , :RelationshipXref_go_GO_1990415 , :RelationshipXref_intact_EBI-13206_identity , :RelationshipXref_refseq_NP_013292_1 , :RelationshipXref_interpro_IPR007223 , :UnificationXref_uniprotkb_P80667 , :RelationshipXref_go_GO_0005778 , :RelationshipXref_go_GO_1990429 .
+
+<http://purl.org/spar/doco/FigureLabel>
+        a       owl:Class .
+
+:UnificationXref_psi-mi_MI_0471
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0471" .
+
+:ExperimentalForm_1494456508177
+        a                               bp:ExperimentalForm ;
+        bp:comment                      "[ModificationFeature: [binding region]]" , "[ExperimentalFormVocabulary_neutral component]" ;
+        bp:experimentalFeature          :ModificationFeature_1494456508176 ;
+        bp:experimentalFormDescription  :ExperimentalFormVocabulary_neutral_component .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/10087260#f8>
+        a       <http://purl.org/spar/doco/FigureLabel> .
+
+:UnificationXref_psi-mi_MI_0497
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0497" .
+
+:RelationshipXref_interpro_IPR025655
+        a       bp:RelationshipXref ;
+        bp:db   "interpro" ;
+        bp:id   "IPR025655" .
+
+:RelationshipXref_sgd_S000003121
+        a       bp:RelationshipXref ;
+        bp:db   "sgd" ;
+        bp:id   "S000003121" .
+
+:UnificationXref_mint_MINT-7721162
+        a       bp:UnificationXref ;
+        bp:db   "mint" ;
+        bp:id   "MINT-7721162" .
+
+:RelationshipXref_intact_EBI-6962899_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "intact" ;
+        bp:id                "EBI-6962899" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+:Evidence_1494456508179_p951835
+        a                    bp:Evidence ;
+        bp:experimentalForm  :ExperimentalForm_1494456508181 .
+
+:RelationshipXref_uniprotkb_P53112_identity
+        a                    bp:RelationshipXref ;
+        bp:db                "uniprotkb" ;
+        bp:id                "P53112" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0356> .
+
+<http://identifiers.org/psimi/MI:0356>
+        a        bp:RelationshipTypeVocabulary ;
+        bp:term  "identity" ;
+        bp:xref  :UnificationXref_1494456508171 .
+
+:RelationshipXref_mint_MINT-6742807_primary-reference
+        a                    bp:RelationshipXref ;
+        bp:db                "mint" ;
+        bp:id                "MINT-6742807" ;
+        bp:relationshipType  <http://identifiers.org/psimi/MI:0358> .
+
+:UnificationXref_psi-mi_MI_0396
+        a       bp:UnificationXref ;
+        bp:db   "psi-mi" ;
+        bp:id   "MI:0396" .
+
+:RelationshipXref_sgd_S000004181
+        a       bp:RelationshipXref ;
+        bp:db   "sgd" ;
+        bp:id   "S000004181" .
+
+:ModificationFeature_1494456508180
+        a                       bp:ModificationFeature ;
+        bp:featureLocationType  :SequenceRegionVocabulary_binding_site ;
+        bp:modificationType     :SequenceModificationVocabulary_binding_region .
+
+:RelationshipXref_go_GO_0016021
+        a       bp:RelationshipXref ;
+        bp:db   "go" ;
+        bp:id   "GO:0016021" .
